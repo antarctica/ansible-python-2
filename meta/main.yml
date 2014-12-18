@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  description: Installs python version 2
+  author: British Antarctic Survey - Web and Applications Team
+  company: British Antarctic Survey
+  license: MIT
+  min_ansible_version: 1.6
+  platforms:
+  - name: Ubuntu
+      - trusty
+  categories:
+  - web
+
+armadillo_info:
+  name: Python 2
+  version: 0.1.0
+  source: git@stash.ceh.ac.uk:7999/barc/python-2.git
+  dependencies:
+  - git@stash.ceh.ac.uk:7999/barc/core.git#v0.5.2
+
+dependencies:
+  - core
